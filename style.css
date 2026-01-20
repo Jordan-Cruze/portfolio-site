@@ -45,6 +45,14 @@ html {
 
 .color {
     color: #00eaff;
+    display: inline-block;
+    cursor: default;
+    text-shadow: 0 3px 7px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.color:hover {
+    transform: scale(1.05);
 }
 
 h1, h2, h3, p {
@@ -360,7 +368,6 @@ header p {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
 
 /* Navbar */
 
