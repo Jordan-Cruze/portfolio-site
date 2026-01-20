@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jordan Cruze | Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!--*NAVBAR-->
+        <nav class="navbar">
+            <div class="navbar-content">
+
+                <span class="logo">Jordan Cruze</span>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <!--*INTRO SECTION-->
+        <section id="home" class="intro-section">
+            
+            <div class="intro-container">
+                <!--*PROFILE PICTURE-->
+                <img src="./assets/images/Profile.JPEG" alt="Profile Picture" class="intro-img">
+
+                <div class="intro-text">
+                    <h1>Hi, I'm <span class="color">Jordan Cruze</span>!</h1>
+                    <p>I'm a game designer and developer from Seattle.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!--*PROJECTS SECTION-->
+        <!--TODO ADD ICONS AND SCREENSHOT ON PROJECT CARDS-->
+        <section id="projects">
+            <div class="projects-container">
+
+                <h2 class="color projects-title">Projects</h2>
+
+                <div class="cards">
+
+                    <!--!GCU CAMPUS MUSICIAN APP-->
+                    <a href="./projects/campus-music-app.html" class="project-card">
+                        <h3>Campus Music App</h3>
+                        <p>A web app designed to connect musicians on my college campus</p>
+                    </a>
+
+                    <!--!PORTFOLIO-->
+                    <a href="./projects/portfolio.html" class="project-card">
+                        <h3>This Portfolio</h3>
+                        <p>A clean showcase of my work</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--*ABOUT/EDUCATION SECTION-->
+        <section id="about">
+            <h2 class="color about-title">About Me</h2>
+
+            <p class="about-lead">
+                Hi, I'm Jordan Cruze, a solo game designer and developer
+                passionate about creating immersive and interactive experiences.
+            </p>
+
+            <p class="about-text">
+                I specialize in systems design, gameplay mechanics, and clean, readable code
+                - handling everything from concept and design to implementation and polish as a one person team.
+            </p>
+
+            <p class="about-text">
+                My work spans game development and web apps, blending technical problem-solving with creative design.
+                Outside of development, I play music and enjoy experimenting with ne tools and ideas.
+            </p>
+
+            <h3 class="skills">My Skills:</h3>
+            <ul class="skills-list">
+                <li>Game Systems & Mechanics</li>
+                <li>Godot / Game Logic</li>
+                <li>Web Apps</li>
+                <li>UI & Interaction Design</li>
+            </ul>
+
+            <div class="education-container">
+                <h3 class="education">Education:</h3>
+
+                <div class="about-card">
+                    <h3>B.S. in Computer Science</h3>
+                    <div class="school">Grand Canyon University (Expected April 27)</div>
+                    <div class="description">Emphasis on Game and Simulation Development</div>
+                    <div class="coursework">Relevant Coursework: C++, Java, Python</div>
+                    <div class="dates">Fall 2024 - Present</div>
+                </div>
+
+                <div class="about-card">
+                    <h3>Assoicate in Arts and Sciences </h3>
+                    <div class="school">Everett Commnity College</div>
+                    <div class="description">Earned A.A.S while in High School</div>
+                    <div class="coursework">Relevant Coursework: C++</div>
+                    <div class="dates">Fall 2022 - Spring 2024</div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!--*FOOTER-->
+        <footer id="contact" class="footer">
+            <div class="footer-content">
+                <span>Connect with me:</span>
+                <a href="https://github.com/Jordan-Cruze" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/jordan-cruze/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://freeworld-interactive.itch.io/" target="_blank" rel="noopener">Itch.io</a>
+            </div>
+        </footer>
+
+        <!--*NAVBAR SCROLL SCRIPT-->
+        <script>
+            const navbar = document.querySelector('.navbar');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 250) { // adjust the scroll threshold
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        </script>
+
+
+    </body>
+</html>
