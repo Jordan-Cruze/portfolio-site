@@ -10,11 +10,22 @@
 
     <body>
 
+        <div id="dot-container"></div>
+
         <!--*NAVBAR-->
         <nav class="navbar">
             <div class="navbar-content">
 
-                <span class="logo">Jordan Cruze</span>
+                <a href="#home" class="logo-wrapper">
+                    <h3 class="logo-text">Jordan Cruze</h2>
+                </a>
+
+                <!--Hamburger Button-->
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -36,7 +47,7 @@
 
                 <div class="intro-text">
                     <h1>Hi, I'm <span class="color">Jordan Cruze</span>!</h1>
-                    <p>I'm a game designer and developer from Seattle.</p>
+                    <p>Game designer and developer.</p>
                 </div>
             </div>
 
@@ -56,13 +67,25 @@
                     <!--!GCU CAMPUS MUSICIAN APP-->
                     <a href="./projects/campus-music-app.html" class="project-card">
                         <h3>Campus Music App</h3>
-                        <p>A web app designed to connect musicians on my college campus</p>
+                        <p>A Web App Designed to Connect Musicians on My College Campus</p>
+
+                        <div class="project-tech">
+                            <img src="./assets/images/React.svg" alt="React" class="tech-icon">
+                            <img src="./assets/images/javascript.svg" alt="JavaScript" class="tech-icon">
+                            <img src="./assets/images/Firebase.svg" alt="Firebase" class="tech-icon">
+                        </div>
                     </a>
 
                     <!--!PORTFOLIO-->
                     <a href="./projects/portfolio.html" class="project-card">
                         <h3>This Portfolio</h3>
-                        <p>A clean showcase of my work</p>
+                        <p>A Mobile-Optimized Showcase of My Work</p>
+
+                        <div class="project-tech">
+                            <img src="./assets/images/html5.svg" alt="React" class="tech-icon">
+                            <img src="./assets/images/css.svg" alt="JavaScript" class="tech-icon">
+                            <img src="./assets/images/javascript.svg" alt="Firebase" class="tech-icon">
+                        </div>
                     </a>
 
                 </div>
@@ -73,7 +96,7 @@
 
         <!--*ABOUT/EDUCATION SECTION-->
         <section id="about">
-            <h2 class="color about-title">About Me</h2>
+            <h2 class="color about-title">About</h2>
 
             <p class="about-lead">
                 Hi, I'm Jordan Cruze, a solo game designer and developer
@@ -87,7 +110,7 @@
 
             <p class="about-text">
                 My work spans game development and web apps, blending technical problem-solving with creative design.
-                Outside of development, I play music and enjoy experimenting with ne tools and ideas.
+                Outside of development, I play music and enjoy experimenting with new tools and ideas.
             </p>
 
             <h3 class="skills">My Skills:</h3>
@@ -120,17 +143,85 @@
             </div>
         </section>
 
+        <!--*CONTACT SECTION-->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+
+                <h2 class="color contact-title">Contact</h2>
+
+                <!--Contact Cards-->
+                <div class="cards contact-cards">
+
+                    <a href="https://github.com/Jordan-Cruze" target="_blank" class="project-card">
+                        
+                        <div class="contact-card-content">
+
+                            <img src="./assets/images/GitHub-black.svg" alt="GitHub" class="contact-icon">
+                            
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>View My Projects & Code</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jordan-cruze/" target="_blank" class="project-card">
+                        
+                        <div class="contact-card-content">
+
+                            <img src="./assets/images/LinkedIn.svg" alt="LinkedIn" class="contact-icon">
+                            
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <p>Connect Professionally</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://freeworld-interactive.itch.io/" target="_blank" class="project-card">
+                        
+                        <div class="contact-card-content">
+
+                            <img src="./assets/images/itch.svg" alt="itch.io" class="contact-icon">
+                            
+                            <div>
+                                <h3>Itch.io</h3>
+                                <p>Play My Games</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
 
 
         <!--*FOOTER-->
         <footer id="contact" class="footer">
             <div class="footer-content">
-                <span>Connect with me:</span>
+                <span>Connect with Me:</span>
                 <a href="https://github.com/Jordan-Cruze" target="_blank" rel="noopener">GitHub</a>
                 <a href="https://www.linkedin.com/in/jordan-cruze/" target="_blank" rel="noopener">LinkedIn</a>
                 <a href="https://freeworld-interactive.itch.io/" target="_blank" rel="noopener">Itch.io</a>
             </div>
         </footer>
+
+
+
+        <script>
+            window.addEventListener('load', () => {
+                // Remove any hash from URL
+                if (window.location.hash) {
+                history.replaceState(null, null, ' '); // removes #projects etc.
+                }
+                // Scroll to top just in case
+                window.scrollTo(0, 0);
+            });
+        </script>
+
+
 
         <!--*NAVBAR SCROLL SCRIPT-->
         <script>
@@ -145,6 +236,8 @@
             });
         </script>
 
+        <script src="./assets/js/dot.js"></script>
+        <script src="./assets/js/hamburger.js"></script>
 
     </body>
 </html>
