@@ -199,6 +199,11 @@ header p {
     }
 
     /* Contact Section */
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .contact-section,
     .contact-title {
         text-align: center !important;
@@ -623,6 +628,50 @@ header {
 .contact-title {
     font-size: 2.5rem;
     margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.contact-form label {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+}
+
+.contact-form button {
+    background-color: #00eaff;
+    color: #111;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+.contact-form button:hover {
+    background-color: #00c2d9;
 }
 
 .contact-cards {
