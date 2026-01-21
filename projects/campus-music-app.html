@@ -1,9 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Web App | Jordan Cruze</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Web App | Jordan Cruze</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../assets/icon.ico" type="image/png">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+
+        <div id="dot-container"></div>
+
+        <nav class="navbar">
+
+            <div class="navbar-content">
+
+                <a href="../index.html" class="logo-wrapper">
+                    <span class="logo-text">Jordan Cruze</span>
+                </a>
+
+                <!--Hamburger Button-->
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#techdetails">Technical</a></li>
+                    <li><a href="#learnings">Learnings</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <main class="project-page">
+
+            <!--*PROJECT HERO-->
+            <section id="intro" class="project-hero">
+                <h1 class="color">Project Description</h1>
+                <h2>Musician Web App</h2>
+
+                <p class="project-tagline">
+                    This Web App was Designed to Connect Student Musicians on Campus
+                </p>
+
+                <!--*TECH STACK ICONS-->
+                <div class="project-tech">
+                    <div class="tech-tooltip">
+                        <img src="../assets/images/React.svg" class="tech-icon" alt="React">
+                        <span class="tooltip-text">React</span>
+                    </div>
+
+                    <div class="tech-tooltip">
+                        <img src="../assets/images/javascript.svg" class="tech-icon" alt="JavaScript">
+                        <span class="tooltip-text">JavaScript</span>
+                    </div>
+
+                    <div class="tech-tooltip">
+                        <img src="../assets/images/Firebase.svg" class="tech-icon" alt="Firebase">
+                        <span class="tooltip-text">Firebase</span>
+                    </div>
+
+                    <div class="tech-tooltip">
+                        <img src="../assets/images/Tailwind.svg" class="tech-icon" alt="Tailwind">
+                        <span class="tooltip-text">Tailwind</span>
+                    </div>
+                </div>
+
+                <!--*HERO IMAGE-->
+
+                <div class="project-gallery-card">
+                        <img src="../assets/images/music-project.png"
+                        alt="Screenshot of Project">
+                </div>
+
+                <ul class="skills-list">
+                    <li class="clickable-skill">
+                        <a href="https://campus-music-app.web.app" target="_blank">Visit the Campus Musician App</a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!--*OVERVIEW-->
+            <section id="overview" class="project-section">
+                <h2 class="color">Overview</h2>
+
+                <p>
+                    This web app was designed to bring student musicians together
+                    and foster a vibrant campus music community. The app allows users
+                    to create profiles, create bands, and discover other talented students on campus.
+                    Its core focus is collaboration, making it easy for students to find bandmates,
+                    join jam sessions, and connect over shared musical interests.
+                </p>
+                
+            </section>
+
+            <!--*FEATURES-->
+            <section id="features" class="project-section">
+                <h2 class="color">Key Features</h2>
+
+                <div class="education-container">
+
+                    <div class="about-card">
+                        <h3>User Profiles</h3>
+                        <p>Students can create detailed profiles showcasing their instruments, skills, and musical style, making it easy to find like-minded collaborators.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Collaboration Tools</h3>
+                        <div class="description">(Coming Soon!)</div>
+                        <p>Connect with other musicians to form bands, schedule jam sessions, and collaborate on music projects directly through the app.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Performance Sharing</h3>
+                        <div class="description">(Coming Soon!)</div>
+                        <p>Upload and share audio or video performances to a campus-wide feed, allowing users to discover talent and get feedback from peers.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Discovery & Matching</h3>
+                        <div class="description">(Coming Soon!)</div>
+                        <p>Find local musicians with similar interests using search filters and recommendations, making it easy to build connections on campus.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Responsive Design</h3>
+                        <div class="description">(Coming Soon!)</div>
+                        <p>The app is fully mobile-friendly, ensuring a seamless experience across phones, tablets, and desktop devices.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Interactive UI</h3>
+                        <p>Engaging interface with hover effects, smooth transitions, and intuitive navigation to enhance user experience and accessibility.</p>
+                    </div>
+                    
+                </div>
+            </section>
+
+
+            <!--*GALLERY-->
+            <section id="gallery" class="project-section">
+                <h2 class="color">Gallery</h2>
+
+                <div class="project-gallery">
+
+                    <div class="project-gallery-card">
+                        <img src="../assets/images/music-1.png" alt="Project screenshot 1">
+                    </div>
+
+                    <div class="project-gallery-card">
+                        <img src="../assets/images/music-2.png" alt="Project screenshot 2">
+                    </div>
+
+                    <div class="project-gallery-card">
+                        <img src="../assets/images/music-3.png" alt="Project screenshot 3">
+                    </div>
+
+                    <div class="project-gallery-card">
+                        <img src="../assets/images/music-4.png" alt="Project screenshot 4">
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--*TECHNICAL DETAILS-->
+            <section id="techdetails" class="project-section tech-details">
+                <h2 class="color">Technical Details</h2>
+
+                <p>
+                    The app was built as a modern full-stack web application with a focus on performance, scalability, and maintainability.
+                    React was used for the front-end to create a dynamic, component-based user interface with reusable elements and smooth interactivity.
+                </p>
+
+                <p>
+                    Tailwind CSS enabled rapid styling with a clean, responsive, and consistent design system. Firebase was integrated for backend functionality,
+                    including authentication, real-time database updates, and cloud storage for user-generated content such as music uploads and profile images.
+                </p>
+
+                <p>
+                    The app also features routing with React Router, state management using React Context, and interactive UI elements including hover effects,
+                    modals, and tooltips. Form handling and notifications were implemented using Firebase functions to simplify backend logic while keeping the
+                    application lightweight and secure.
+                </p>
+
+                <p>
+                    Overall, this project demonstrates full-stack development skills, modern front-end frameworks, cloud integration, and responsive design principles,
+                    resulting in a seamless and user-friendly platform for student musicians.
+                </p>
+            </section>
+
+
+            <!--*LEARNINGS-->
+            <section id="learnings" class="project-section learnings">
+                <h2 class="color">Challenges & Learnings</h2>
+
+                <p>
+                    One of the main challenges was implementing real-time collaboration features using Firebase. Managing user authentication, live updates,
+                    and database synchronization required careful planning to ensure data consistency and responsiveness.
+                </p>
+
+                <p>
+                    Building a responsive, interactive UI with React and Tailwind also provided valuable learning opportunities. Balancing component-based design,
+                    reusable styles, and accessibility standards helped me improve both my front-end development skills and my understanding of modern web design practices.
+                </p>
+
+                <!--
+                <p>
+                    Integrating multimedia content, such as audio and video uploads, taught me how to handle cloud storage, optimize performance,
+                    and ensure smooth playback across devices.
+                </p>
+                -->
+
+                <p>
+                    Overall, this project reinforced the importance of planning, testing, and iterative development.
+                    I gained hands-on experience with full-stack development, React, Firebase, Tailwind, and building a platform that delivers a seamless
+                    and engaging user experience for a community-focused application.
+                </p>
+
+            </section>
+        </main>
+
+
+
+        <!--*FOOTER-->
+        <footer class="footer">
+            <div class="footer-content links">
+                <a href="https://github.com/Jordan-Cruze" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/jordan-cruze/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://freeworld-interactive.itch.io/" target="_blank" rel="noopener">Itch.io</a>
+            </div>
+        </footer>
+
+        <!--*NAVBAR SCROLL SCRIPT-->
+        <script>
+            const navbar = document.querySelector('.navbar');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 250) { // adjust the scroll threshold
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        </script>
+
+        <script src="../assets/js/dot.js"></script>
+        <script src="../assets/js/hamburger.js"></script>
+
+    </body>
+</html>

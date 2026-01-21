@@ -1,9 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Info | Jordan Cruze</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Info | Jordan Cruze</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../assets/icon.ico" type="image/png">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+
+        <div id="dot-container"></div>
+
+        <nav class="navbar">
+
+            <div class="navbar-content">
+
+                <a href="../index.html" class="logo-wrapper">
+                    <span class="logo-text">Jordan Cruze</span>
+                </a>
+
+                <!--Hamburger Button-->
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links">
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#techdetails">Technical</a></li>
+                    <li><a href="#learnings">Learnings</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <main class="project-page">
+
+            <!--*PROJECT HERO-->
+            <section id="intro" class="project-hero">
+                <h1 class="color">Project Description</h1>
+                <h2>Portfolio Website</h2>
+
+                <p class="project-tagline">
+                    This Project was Designed to Cleanly Showcase all of My Work in One Place
+                </p>
+
+                <!--*TECH STACK ICONS-->
+                <div class="project-tech">
+                    <div class="tech-tooltip">
+                        <img src="../assets/images/html5.svg" class="tech-icon" alt="HTML">
+                        <span class="tooltip-text">HTML</span>
+                    </div>
+
+                    <div class="tech-tooltip">
+                        <img src="../assets/images/css.svg" class="tech-icon" alt="CSS">
+                        <span class="tooltip-text">CSS</span>
+                    </div>
+
+                    <div class="tech-tooltip">
+                        <img src="../assets/images/javascript.svg" class="tech-icon" alt="JavaScript">
+                        <span class="tooltip-text">JavaScript</span>
+                    </div>
+
+                    <div class="tech-tooltip">
+                        <img src="../assets/images/Formspree.svg" class="tech-icon" alt="Formspree">
+                        <span class="tooltip-text">Formspree</span>
+                    </div>
+                </div>
+
+                <!--*HERO IMAGE-->
+
+                <div class="project-gallery-card">
+                        <img src="../assets/images/profile-project.png"
+                        alt="Screenshot of Project">
+                </div>                
+
+            </section>
+
+            <!--*OVERVIEW-->
+            <section id="overview" class="project-section">
+                <h2 class="color">Overview</h2>
+
+                <p>
+                    This portfolio website was designed to serve as a central hub for
+                    showcasing my work, skills, and projects in a clean and user-friendly way.
+                    It demonstrates my proficiency in front-end web development, including HTML,
+                    CSS, and JavaScript, while highlighting responsive design principles and
+                    interactive UI elements. The site is structured to provide a clear narrative
+                    of my experience, technical capabilities, and creative projects,
+                    making it easy for visitors to explore and understand my work at a glance.
+                </p>
+            </section>
+
+            <!--*FEATURES-->
+            <section id="features" class="project-section">
+                <h2 class="color">Key Features</h2>
+
+                <div class="education-container">
+                    <!-- Feature 1 -->
+                    <div class="about-card">
+                        <h3>Responsive Design</h3>
+                        <p>Fully mobile-friendly layout that adapts seamlessly to screens of all sizes using flexible grids and media queries.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="about-card">
+                        <h3>Interactive UI</h3>
+                        <p>Hover effects, tooltips, and smooth transitions enhance user engagement and highlight technical skills in CSS and JavaScript.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="about-card">
+                        <h3>Project Showcase</h3>
+                        <p>Dynamic project cards with images, descriptions, and tech stack icons to clearly present each project.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="about-card">
+                        <h3>Navigation & Accessibility</h3>
+                        <p>Sticky navbar and smooth scroll behavior improve usability, making the site easy to navigate.</p>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="about-card">
+                        <h3>Tech Stack Integration</h3>
+                        <p>Built with modern web standards (HTML5, CSS3, JavaScript) and structured for scalability and maintainability.</p>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="about-card">
+                        <h3>Clean & Modern Aesthetic</h3>
+                        <p>Minimalist design with consistent typography, color scheme, and spacing to highlight content effectively.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--*GALLERY-->
+            <section id="gallery" class="project-section">
+                <h2 class="color">Gallery</h2>
+
+                <div class="project-gallery">
+
+                    <div class="project-gallery-card">
+                        <img src="../assets/images/profile-1.png" alt="Project screenshot 1">
+                    </div>
+
+                    <div class="project-gallery-card">
+                        <img src="../assets/images/profile-2.png" alt="Project screenshot 2">
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--*TECHNICAL DETAILS-->
+            <section id="techdetails" class="project-section tech-details">
+                <h2 class="color">Technical Details</h2>
+
+                <p>
+                    This portfolio website was built using a modern front-end stack to ensure responsiveness,
+                    performance, and maintainability. HTML5 provides the semantic structure of the site,
+                    CSS3 handles styling, layout, and transitions, while JavaScript adds interactivity and dynamic behaviors.
+                </p>
+
+                <p>
+                    The project employs a component-based design approach, with reusable cards and sections for
+                    projects, features, and skills, allowing for consistent styling and easy updates. Responsive
+                    media queries and flexible grid layouts ensure that the site adapts seamlessly across
+                    desktop, tablet, and mobile devices.
+                </p>
+
+                <p>
+                    Tooltips, hover effects, and smooth scrolling were implemented to enhance user experience,
+                    while attention to accessibility ensures readability and navigation for all users.
+                    External integrations, such as Formspree for the contact form, simplify backend processes
+                    without sacrificing security or performance.
+                </p>
+
+                <p>
+                    Overall, the project demonstrates practical application of front-end development principles,
+                    clean code organization, and a focus on user-centric design.
+                </p>
+            </section>
+
+            <!--*LEARNINGS-->
+            <section id="learnings" class="project-section learnings">
+                <h2 class="color">Challenges & Learnings</h2>
+
+                <p>
+                    One of the main challenges in building this portfolio was ensuring a fully responsive design
+                    that looks polished on all devices. Balancing flexible layouts with consistent styling
+                    required careful use of CSS grid, flexbox, and media queries.
+                </p>
+
+                <p>
+                    Another challenge was creating interactive elements, such as tooltips, hover effects, and
+                    smooth scrolling, while keeping performance smooth and the code maintainable. Debugging
+                    cross-browser inconsistencies also provided valuable learning opportunities.
+                </p>
+
+                <p>
+                    Through this project, I improved my understanding of:
+                    semantic HTML structure, advanced CSS techniques, responsive design principles,
+                    and JavaScript DOM manipulation. I also gained practical experience with
+                    integrating third-party services, like Formspree for the contact form,
+                    to streamline functionality without adding unnecessary complexity.
+                </p>
+
+                <p>
+                    Overall, this project reinforced the importance of planning, testing, and iterating
+                    on both design and code, resulting in a portfolio that is both visually appealing
+                    and highly functional.
+                </p>
+            </section>
+
+        </main>
+
+
+
+        <!--*FOOTER-->
+        <footer class="footer">
+            <div class="footer-content links">
+                <a href="https://github.com/Jordan-Cruze" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/jordan-cruze/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://freeworld-interactive.itch.io/" target="_blank" rel="noopener">Itch.io</a>
+            </div>
+        </footer>
+
+
+        <!--*NAVBAR SCROLL SCRIPT-->
+        <script>
+            const navbar = document.querySelector('.navbar');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 250) { // adjust the scroll threshold
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        </script>
+
+        <script src="../assets/js/dot.js"></script>
+        <script src="../assets/js/hamburger.js"></script>
+
+    </body>
+</html>
