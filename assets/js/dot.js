@@ -19,25 +19,27 @@ for (let y = 0; y <= rows; y++) {
 }
 
 // Repel dots from cursor
-window.addEventListener('mousemove', (e) => {
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
+if (window.innerWidth > 768) {
+  window.addEventListener('mousemove', (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
 
-  dots.forEach(dot => {
-    const rect = dot.getBoundingClientRect();
-    let dx = rect.left + rect.width/2 - mouseX;
-    let dy = rect.top + rect.height/2 - mouseY;
-    let distance = Math.sqrt(dx*dx + dy*dy);
+    dots.forEach(dot => {
+      const rect = dot.getBoundingClientRect();
+      let dx = rect.left + rect.width/2 - mouseX;
+      let dy = rect.top + rect.height/2 - mouseY;
+      let distance = Math.sqrt(dx*dx + dy*dy);
 
-    if (distance < 100) { // radius of repulsion
-      let force = (100 - distance) / 100 * 15; // how far to push
-      let angle = Math.atan2(dy, dx);
-      dot.style.transform = `translate(${Math.cos(angle) * force}px, ${Math.sin(angle) * force}px)`;
-    } else {
-      dot.style.transform = `translate(0, 0)`;
-    }
+      if (distance < 100) { // radius of repulsion
+        let force = (100 - distance) / 100 * 15; // how far to push
+        let angle = Math.atan2(dy, dx);
+        dot.style.transform = `translate(${Math.cos(angle) * force}px, ${Math.sin(angle) * force}px)`;
+      } else {
+        dot.style.transform = `translate(0, 0)`;
+      }
+    });
   });
-});
+}
 
 // Rebuild grid on resize
 window.addEventListener('resize', () => location.reload());
